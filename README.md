@@ -31,7 +31,7 @@ Improved localization performance with optimized bounding box regression
 Conducted comparative analysis across models to select the best performer
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Sales Forecasting
+# Sales Forecasting
 ### Overview
 
 This project implements a machine learning-based sales forecasting system using historical sales data. The goal is to predict future sales trends and provide actionable insights for business decision-making.
@@ -45,21 +45,42 @@ This notebook demonstrates a complete end-to-end data science workflow, from raw
 Accurately predict future sales using historical data by:
 
 Identifying patterns and seasonality
+
 Engineering meaningful features
+
 Training regression models
+
 Evaluating prediction performance
+
+### Dataset
+
+The dataset used in this project includes:
+
+📅 Date (time-based feature)
+
+🏪 Store / Product identifiers
+
+📦 Sales / Quantity sold
+
+👉 The dataset is treated as a time-series forecasting problem.
 
 ### Exploratory Data Analysis (EDA)
 
 Key steps performed:
 
 Data cleaning and missing value handling
+
 Time-series visualization of sales trends
+
 Seasonality and trend detection
+
 Correlation analysis
-Insights:
+
+### Insights:
 Sales exhibit temporal patterns (daily/monthly trends)
+
 Seasonal spikes indicate periodic demand changes
+
 Certain features strongly influence sales
 
 ### Feature Engineering
@@ -67,20 +88,25 @@ Certain features strongly influence sales
 To improve model performance, the following features are created:
 
 📆 Date-based features:
+
 Year, Month, Day, Weekday
+
 ⏳ Lag features (previous sales values)
+
 📊 Rolling statistics (moving averages)
+
 🔢 Encoding categorical variables
 
 These transformations help models learn temporal dependencies and seasonality.
 
 ### Machine Learning Models
 
-The notebook applies multiple regression models:
-
 Linear Regression
+
 Decision Tree Regressor
+
 Random Forest Regressor
+
 (Optional) XGBoost
 
 Tree-based models are particularly effective as they capture non-linear relationships and feature interactions.
@@ -89,27 +115,39 @@ Tree-based models are particularly effective as they capture non-linear relation
 
 Models are evaluated using standard regression metrics:
 
-📉 Mean Absolute Error (MAE)
-📉 Root Mean Squared Error (RMSE)
-📊 R² Score
+Mean Absolute Error (MAE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
 
 ##### The best model is selected based on accuracy and generalization performance.
 
 ### Results
 Successfully built a predictive model for sales forecasting
+
 Captured trend and seasonality patterns
+
 Identified key drivers influencing sales
+
 Achieved reliable prediction accuracy
-💡 Business Insights
+
+### 💡 Business Insights
 📦 Helps optimize inventory levels
+
 📊 Improves demand planning
+
 📢 Enables targeted marketing strategies
+
 💰 Supports revenue forecasting
 
 ## Tech Stack
-Python 🐍
+Python
+
 Pandas & NumPy
+
 Matplotlib & Seaborn
+
 Scikit-learn
 
 ### How to Run
@@ -124,3 +162,5 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 
 ###### Run notebook
 jupyter notebook
+
+
